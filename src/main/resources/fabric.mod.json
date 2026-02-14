@@ -2,8 +2,8 @@
 	"schemaVersion": 1,
 	"id": "modid",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Combat Assistant",
+	"description": "Detects attribute swaps, shows mace range, and improves weapon combat feedback in servers.",
 	"authors": [
 		"Me!"
 	],
@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.example.SpearEnchantmentBooster"
 		],
 		"client": [
 			"com.example.ExampleModClient"
