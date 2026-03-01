@@ -1,31 +1,28 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "soulswap",
 	"version": "${version}",
-	"name": "Combat Assistant",
-	"description": "Detects attribute swaps, shows mace range, and improves weapon combat feedback in servers.",
+	"name": "Soul Swap",
+	"description": "A combat/utility mod for tactical repositioning! Throw an Ender Pearl at a mob to swap positions. Hostile mobs take confusion damage, passive animals grant Invisibility.",
 	"authors": [
-		"Me!"
+		"Virat"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/soulswap/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.SpearEnchantmentBooster"
+			"com.soulswap.SoulSwapMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.soulswap.SoulSwapClientMod"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"soulswap.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "soulswap.client.mixins.json",
 			"environment": "client"
 		}
 	],
@@ -34,8 +31,5 @@
 		"minecraft": "~1.21.11",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
